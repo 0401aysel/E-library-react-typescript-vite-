@@ -1,0 +1,196 @@
+.list-element {
+  margin-bottom: 20px;
+}
+.book-card {
+  background: #eeeeee;
+  margin: 20px;
+  width: max-content;
+  border-radius: 4px;
+  padding: 30px 60px;
+  position: relative;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  border: none;
+  background: none;
+}
+.edit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+}
+#root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.booksList {
+  display: flex;
+}
+.booksList img {
+  max-width: 170px;
+  margin-right: 30px;
+}
+.books-list {
+  width: 100%;
+  position: relative;
+}
+.list-element img {
+  width: 26px;
+  margin-right: 10px;
+}
+.book-title {
+  display: flex;
+  align-items: center;
+  color: #6d6d6d;
+}
+.book-card-click {
+  height: max-content;
+}
+.list-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-element:nth-child(odd) {
+  background: #ffe0e57d;
+}
+.list-element:nth-child(even) {
+  background: #d1d1d17d;
+}
+.bookcard-click {
+  background: none;
+  padding: 4px 24px;
+  border: 1px solid #aca5a5;
+  color: #6d6d6d;
+}
+.book-card-element {
+  text-align: center;
+  width: max-content;
+  margin: auto;
+}
+.book-card button img {
+  width: 26px;
+}
+.book-image,
+.book-info {
+  width: 300px;
+}
+.book-image img {
+  width: 100%;
+}
+.about-book {
+  display: flex;
+  align-items: center;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+.read {
+  background: green;
+}
+.unread {
+  background: red;
+}
+.filter {
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 0px 40px 20px 40px;
+}
+.filter button {
+  padding: 0 20px;
+  background: none;
+  border: none;
+  margin: 0 20px;
+}
+.filtered-books {
+  max-height: 300px;
+  overflow: auto;
+}
+.filter button.active {
+  border-bottom: 2px solid #f0aeb9;
+}
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  border: none;
+  background: none;
+}
+.addBook {
+  position: absolute;
+  right: 54px;
+  z-index: 2;
+  padding: 4px 15px;
+  border: 1px solid #aca5a5;
+  color: #6d6d6d;
+  background: none;
+}
+.addBookForm {
+  margin: 40px 0;
+}
+.addBookForm form {
+  background: #eeeeee;
+  margin: auto;
+  border-radius: 4px;
+  padding: 30px 60px;
+  position: relative;
+  width: 700px;
+}
+.addBookForm form div {
+  margin: 20px 0;
+  display: flex;
+}
+.addBookForm form label {
+  padding-right: 20px;
+  min-width: max-content;
+  width: 200px;
+}
+.addBookForm form input {
+  width: 100%;
+  font-size: 16px;
+  padding: 6px 20px;
+}
+.addBookForm form button {
+  background: none;
+  padding: 4px 24px;
+  border: 1px solid #aca5a5;
+  color: #6d6d6d;
+}
+.addBook:active,
+.bookcard-click:active,
+.delete:active,
+.delete:hover,
+.close:active,
+.addBookForm form button:hover,
+.addBookForm form input:hover,
+.close:hover {
+  transform: scale(1.2);
+}
+.addBookForm form input:hover {
+  transform: scale(1.02);
+}
+.addBookForm form input[type="checkbox"]:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 991px) {
+  .booksList img {
+    display: none;
+  }
+}
